@@ -1,0 +1,474 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GorillaY = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Hub = Instance.new("Frame")
+local DH = Instance.new("TextButton")
+local AL = Instance.new("TextButton")
+local BN = Instance.new("TextButton")
+local PL = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local DHEXECUTABLES = Instance.new("ScrollingFrame")
+local Fly = Instance.new("TextButton")
+local FistReach = Instance.new("TextButton")
+local ToolReach = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Speedjump = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+local Bulletproof = Instance.new("TextButton")
+local Waypoints = Instance.new("TextButton")
+local ClickTp = Instance.new("TextButton")
+local Antislow = Instance.new("TextButton")
+local AntiStomp = Instance.new("TextButton")
+local AutoStomp = Instance.new("TextButton")
+local PLEXECUTABLES = Instance.new("ScrollingFrame")
+local Comingsoon = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local WayPoints = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local WypsTitle = Instance.new("TextLabel")
+local AdminBase = Instance.new("TextButton")
+local Phones = Instance.new("TextButton")
+local Bat = Instance.new("TextButton")
+local Mask = Instance.new("TextButton")
+local Boxing = Instance.new("TextButton")
+local Guns = Instance.new("TextButton")
+local Bank = Instance.new("TextButton")
+local Fitness = Instance.new("TextButton")
+
+--Properties:
+
+GorillaY.Name = "Gorilla Y"
+GorillaY.Parent = game.Workspace
+GorillaY.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = GorillaY
+Main.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0365566015, 0, 0.398844659, 0)
+Main.Size = UDim2.new(0, 399, 0, 227)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 182, 0, 23)
+Title.Font = Enum.Font.ArialBold
+Title.Text = "Gorilla Y"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Hub.Name = "Hub"
+Hub.Parent = Main
+Hub.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Hub.BorderSizePixel = 0
+Hub.Position = UDim2.new(0, 0, 0.101321585, 0)
+Hub.Size = UDim2.new(0, 119, 0, 204)
+
+DH.Name = "DH"
+DH.Parent = Hub
+DH.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+DH.BorderSizePixel = 0
+DH.Position = UDim2.new(0.117647059, 0, 0.0686274543, 0)
+DH.Size = UDim2.new(0, 91, 0, 27)
+DH.Font = Enum.Font.ArialBold
+DH.Text = "Da hood"
+DH.TextColor3 = Color3.fromRGB(255, 255, 255)
+DH.TextScaled = true
+DH.TextSize = 14.000
+DH.TextWrapped = true
+
+AL.Name = "AL"
+AL.Parent = Hub
+AL.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+AL.BorderSizePixel = 0
+AL.Position = UDim2.new(0.117647059, 0, 0.431372583, 0)
+AL.Size = UDim2.new(0, 91, 0, 27)
+AL.Font = Enum.Font.SourceSans
+AL.Text = "Arsenal"
+AL.TextColor3 = Color3.fromRGB(255, 255, 255)
+AL.TextScaled = true
+AL.TextSize = 14.000
+AL.TextWrapped = true
+
+BN.Name = "BN"
+BN.Parent = Hub
+BN.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+BN.BorderSizePixel = 0
+BN.Position = UDim2.new(0.117647059, 0, 0.617647052, 0)
+BN.Size = UDim2.new(0, 91, 0, 27)
+BN.Font = Enum.Font.SourceSans
+BN.Text = "Break in"
+BN.TextColor3 = Color3.fromRGB(255, 255, 255)
+BN.TextScaled = true
+BN.TextSize = 14.000
+BN.TextWrapped = true
+
+PL.Name = "PL"
+PL.Parent = Hub
+PL.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+PL.BorderSizePixel = 0
+PL.Position = UDim2.new(0.117647059, 0, 0.24509804, 0)
+PL.Size = UDim2.new(0, 91, 0, 27)
+PL.Font = Enum.Font.ArialBold
+PL.Text = "Prison life"
+PL.TextColor3 = Color3.fromRGB(255, 255, 255)
+PL.TextScaled = true
+PL.TextSize = 14.000
+PL.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Hub
+Credits.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.117647059, 0, 0.828431368, 0)
+Credits.Size = UDim2.new(0, 91, 0, 27)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits "
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+DHEXECUTABLES.Name = "DH EXECUTABLES"
+DHEXECUTABLES.Parent = Main
+DHEXECUTABLES.Active = true
+DHEXECUTABLES.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+DHEXECUTABLES.BorderSizePixel = 0
+DHEXECUTABLES.Position = UDim2.new(0.298245609, 0, 0.0969162956, 0)
+DHEXECUTABLES.Size = UDim2.new(0, 280, 0, 204)
+
+Fly.Name = "Fly"
+Fly.Parent = DHEXECUTABLES
+Fly.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.0747898668, 0, 0.0446706302, 0)
+Fly.Size = UDim2.new(0, 102, 0, 37)
+Fly.Font = Enum.Font.ArialBold
+Fly.Text = "Fly(X)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+FistReach.Name = "FistReach"
+FistReach.Parent = DHEXECUTABLES
+FistReach.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FistReach.BorderSizePixel = 0
+FistReach.Position = UDim2.new(0.0747898668, 0, 0.157005429, 0)
+FistReach.Size = UDim2.new(0, 102, 0, 37)
+FistReach.Font = Enum.Font.ArialBold
+FistReach.Text = "FistReach"
+FistReach.TextColor3 = Color3.fromRGB(255, 255, 255)
+FistReach.TextScaled = true
+FistReach.TextSize = 14.000
+FistReach.TextWrapped = true
+
+ToolReach.Name = "ToolReach"
+ToolReach.Parent = DHEXECUTABLES
+ToolReach.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ToolReach.BorderSizePixel = 0
+ToolReach.Position = UDim2.new(0.556932747, 0, 0.157005429, 0)
+ToolReach.Size = UDim2.new(0, 102, 0, 37)
+ToolReach.Font = Enum.Font.ArialBold
+ToolReach.Text = "ToolReach"
+ToolReach.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToolReach.TextScaled = true
+ToolReach.TextSize = 14.000
+ToolReach.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = DHEXECUTABLES
+Noclip.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.556932747, 0, 0.0446706302, 0)
+Noclip.Size = UDim2.new(0, 102, 0, 37)
+Noclip.Font = Enum.Font.ArialBold
+Noclip.Text = "Noclip(C)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Speedjump.Name = "Speed/jump"
+Speedjump.Parent = DHEXECUTABLES
+Speedjump.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speedjump.BorderSizePixel = 0
+Speedjump.Position = UDim2.new(0.546218455, 0, 0.368459165, 0)
+Speedjump.Size = UDim2.new(0, 102, 0, 37)
+Speedjump.Font = Enum.Font.ArialBold
+Speedjump.Text = "Speed/Jump"
+Speedjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speedjump.TextScaled = true
+Speedjump.TextSize = 14.000
+Speedjump.TextWrapped = true
+Speedjump.MouseButton1Down:Connect(function()
+	local lp = game:GetService"Players".LocalPlayer
+	local SuperSpeed = Instance.new("IntValue",lp.Character.BodyEffects.Movement);SuperSpeed.Name = "SuperSpeed"
+	local HulkJump = Instance.new("IntValue",lp.Character.BodyEffects.Movement);HulkJump.Name = "HulkJump"
+end)
+AntiAfk.Name = "AntiAfk"
+AntiAfk.Parent = DHEXECUTABLES
+AntiAfk.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AntiAfk.BorderSizePixel = 0
+AntiAfk.Position = UDim2.new(0.556932747, 0, 0.256124377, 0)
+AntiAfk.Size = UDim2.new(0, 102, 0, 37)
+AntiAfk.Font = Enum.Font.ArialBold
+AntiAfk.Text = "AntiAfk"
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextScaled = true
+AntiAfk.TextSize = 14.000
+AntiAfk.TextWrapped = true
+
+Bulletproof.Name = "Bulletproof"
+Bulletproof.Parent = DHEXECUTABLES
+Bulletproof.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Bulletproof.BorderSizePixel = 0
+Bulletproof.Position = UDim2.new(0.0747898668, 0, 0.368459165, 0)
+Bulletproof.Size = UDim2.new(0, 102, 0, 37)
+Bulletproof.Font = Enum.Font.ArialBold
+Bulletproof.Text = "BulletProof"
+Bulletproof.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bulletproof.TextScaled = true
+Bulletproof.TextSize = 14.000
+Bulletproof.TextWrapped = true
+
+Waypoints.Name = "Waypoints"
+Waypoints.Parent = DHEXECUTABLES
+Waypoints.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Waypoints.BorderSizePixel = 0
+Waypoints.Position = UDim2.new(0.0747898668, 0, 0.256124377, 0)
+Waypoints.Size = UDim2.new(0, 102, 0, 37)
+Waypoints.Font = Enum.Font.ArialBold
+Waypoints.Text = "Waypoints"
+Waypoints.TextColor3 = Color3.fromRGB(255, 255, 255)
+Waypoints.TextScaled = true
+Waypoints.TextSize = 14.000
+Waypoints.TextWrapped = true
+
+ClickTp.Name = "ClickTp"
+ClickTp.Parent = DHEXECUTABLES
+ClickTp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ClickTp.BorderSizePixel = 0
+ClickTp.Position = UDim2.new(0.546218455, 0, 0.588723481, 0)
+ClickTp.Size = UDim2.new(0, 102, 0, 37)
+ClickTp.Font = Enum.Font.ArialBold
+ClickTp.Text = "ClickTp(Q)"
+ClickTp.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickTp.TextScaled = true
+ClickTp.TextSize = 14.000
+ClickTp.TextWrapped = true
+
+Antislow.Name = "Antislow"
+Antislow.Parent = DHEXECUTABLES
+Antislow.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Antislow.BorderSizePixel = 0
+Antislow.Position = UDim2.new(0.0640755817, 0, 0.588723481, 0)
+Antislow.Size = UDim2.new(0, 102, 0, 37)
+Antislow.Font = Enum.Font.ArialBold
+Antislow.Text = "Antislow"
+Antislow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Antislow.TextScaled = true
+Antislow.TextSize = 14.000
+Antislow.TextWrapped = true
+
+AntiStomp.Name = "AntiStomp"
+AntiStomp.Parent = DHEXECUTABLES
+AntiStomp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AntiStomp.BorderSizePixel = 0
+AntiStomp.Position = UDim2.new(0.0640755817, 0, 0.476388693, 0)
+AntiStomp.Size = UDim2.new(0, 102, 0, 37)
+AntiStomp.Font = Enum.Font.ArialBold
+AntiStomp.Text = "AntiStomp"
+AntiStomp.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiStomp.TextScaled = true
+AntiStomp.TextSize = 14.000
+AntiStomp.TextWrapped = true
+
+AutoStomp.Name = "AutoStomp"
+AutoStomp.Parent = DHEXECUTABLES
+AutoStomp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoStomp.BorderSizePixel = 0
+AutoStomp.Position = UDim2.new(0.546218455, 0, 0.476388693, 0)
+AutoStomp.Size = UDim2.new(0, 102, 0, 37)
+AutoStomp.Font = Enum.Font.ArialBold
+AutoStomp.Text = "AutoStomp"
+AutoStomp.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoStomp.TextScaled = true
+AutoStomp.TextSize = 14.000
+AutoStomp.TextWrapped = true
+
+PLEXECUTABLES.Name = "PL EXECUTABLES"
+PLEXECUTABLES.Parent = Main
+PLEXECUTABLES.Active = true
+PLEXECUTABLES.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+PLEXECUTABLES.BorderSizePixel = 0
+PLEXECUTABLES.Position = UDim2.new(0.298245639, 0, 0.0969163179, 0)
+PLEXECUTABLES.Selectable = false
+PLEXECUTABLES.Size = UDim2.new(0, 280, 0, 204)
+PLEXECUTABLES.Visible = false
+
+Comingsoon.Name = "Coming soon"
+Comingsoon.Parent = Main
+Comingsoon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Comingsoon.BorderSizePixel = 0
+Comingsoon.Position = UDim2.new(0, 0, 0.440528631, 0)
+Comingsoon.Size = UDim2.new(0, 119, 0, 163)
+
+TextLabel.Parent = Comingsoon
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.159663871, 0, 0.299212605, 0)
+TextLabel.Rotation = 30.000
+TextLabel.Size = UDim2.new(0, 86, 0, 21)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "Coming Soon.."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+WayPoints.Name = "WayPoints"
+WayPoints.Parent = Main
+WayPoints.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+WayPoints.BorderSizePixel = 0
+WayPoints.Position = UDim2.new(1.30325818, 0, -0.418502122, 0)
+WayPoints.Size = UDim2.new(0, 234, 0, 211)
+WayPoints.Visible = false
+
+Exit.Name = "Exit"
+Exit.Parent = WayPoints
+Exit.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.857027173, 0, 0.00532635534, 0)
+Exit.Size = UDim2.new(0, 32, 0, 28)
+Exit.Font = Enum.Font.ArialBold
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+WypsTitle.Name = "WypsTitle"
+WypsTitle.Parent = WayPoints
+WypsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WypsTitle.BackgroundTransparency = 1.000
+WypsTitle.Position = UDim2.new(0.277533054, 0, 0, 0)
+WypsTitle.Size = UDim2.new(0, 101, 0, 33)
+WypsTitle.Font = Enum.Font.ArialBold
+WypsTitle.Text = "Waypoints"
+WypsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+WypsTitle.TextScaled = true
+WypsTitle.TextSize = 14.000
+WypsTitle.TextWrapped = true
+
+AdminBase.Name = "AdminBase"
+AdminBase.Parent = WayPoints
+AdminBase.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+AdminBase.BorderSizePixel = 0
+AdminBase.Position = UDim2.new(0.0194876902, 0, 0.146309972, 0)
+AdminBase.Size = UDim2.new(0, 102, 0, 28)
+AdminBase.Font = Enum.Font.ArialBold
+AdminBase.Text = "Admin Base"
+AdminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminBase.TextScaled = true
+AdminBase.TextSize = 14.000
+AdminBase.TextWrapped = true
+
+Phones.Name = "Phones"
+Phones.Parent = WayPoints
+Phones.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Phones.BorderSizePixel = 0
+Phones.Position = UDim2.new(0.0194876902, 0, 0.345983654, 0)
+Phones.Size = UDim2.new(0, 102, 0, 28)
+Phones.Font = Enum.Font.ArialBold
+Phones.Text = "Phone"
+Phones.TextColor3 = Color3.fromRGB(255, 255, 255)
+Phones.TextScaled = true
+Phones.TextSize = 14.000
+Phones.TextWrapped = true
+
+Bat.Name = "Bat"
+Bat.Parent = WayPoints
+Bat.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Bat.BorderSizePixel = 0
+Bat.Position = UDim2.new(0.526095629, 0, 0.345983654, 0)
+Bat.Size = UDim2.new(0, 102, 0, 28)
+Bat.Font = Enum.Font.ArialBold
+Bat.Text = "Bat"
+Bat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bat.TextScaled = true
+Bat.TextSize = 14.000
+Bat.TextWrapped = true
+
+Mask.Name = "Mask"
+Mask.Parent = WayPoints
+Mask.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mask.BorderSizePixel = 0
+Mask.Position = UDim2.new(0.526095629, 0, 0.146309972, 0)
+Mask.Size = UDim2.new(0, 102, 0, 28)
+Mask.Font = Enum.Font.ArialBold
+Mask.Text = "Mask"
+Mask.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mask.TextScaled = true
+Mask.TextSize = 14.000
+Mask.TextWrapped = true
+
+Boxing.Name = "Boxing"
+Boxing.Parent = WayPoints
+Boxing.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Boxing.BorderSizePixel = 0
+Boxing.Position = UDim2.new(0.526095629, 0, 0.718324602, 0)
+Boxing.Size = UDim2.new(0, 102, 0, 28)
+Boxing.Font = Enum.Font.ArialBold
+Boxing.Text = "Boxing"
+Boxing.TextColor3 = Color3.fromRGB(255, 255, 255)
+Boxing.TextScaled = true
+Boxing.TextSize = 14.000
+Boxing.TextWrapped = true
+
+Guns.Name = "Guns"
+Guns.Parent = WayPoints
+Guns.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Guns.BorderSizePixel = 0
+Guns.Position = UDim2.new(0.526095629, 0, 0.544554114, 0)
+Guns.Size = UDim2.new(0, 102, 0, 28)
+Guns.Font = Enum.Font.ArialBold
+Guns.Text = "Guns"
+Guns.TextColor3 = Color3.fromRGB(255, 255, 255)
+Guns.TextScaled = true
+Guns.TextSize = 14.000
+Guns.TextWrapped = true
+
+Bank.Name = "Bank"
+Bank.Parent = WayPoints
+Bank.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Bank.BorderSizePixel = 0
+Bank.Position = UDim2.new(0.0194876902, 0, 0.544554114, 0)
+Bank.Size = UDim2.new(0, 102, 0, 28)
+Bank.Font = Enum.Font.ArialBold
+Bank.Text = "Bank"
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextScaled = true
+Bank.TextSize = 14.000
+Bank.TextWrapped = true
+
+Fitness.Name = "Fitness"
+Fitness.Parent = WayPoints
+Fitness.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Fitness.BorderSizePixel = 0
+Fitness.Position = UDim2.new(0.0194876902, 0, 0.718324602, 0)
+Fitness.Size = UDim2.new(0, 102, 0, 28)
+Fitness.Font = Enum.Font.ArialBold
+Fitness.Text = "Fitness"
+Fitness.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fitness.TextScaled = true
+Fitness.TextSize = 14.000
+Fitness.TextWrapped = true
